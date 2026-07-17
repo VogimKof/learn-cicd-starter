@@ -34,6 +34,11 @@ func TestGetAPIKey(t *testing.T) {
 			header:  "ApiKey",
 			wantErr: true,
 		},
+		{
+			name:    "empty api key",
+			header:  "ApiKey ",
+			wantErr: true,
+		},
 	}
 
 	for _, tt := range tests {
