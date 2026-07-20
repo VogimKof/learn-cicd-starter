@@ -39,8 +39,8 @@ func TestGetAPIKey(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			headers := http.Header{}
-				
-			// fmt.Println("Running test ", tt.name)	
+
+			// fmt.Println("Running test ", tt.name)
 
 			if tt.header != "" {
 				headers.Set("Authorization", tt.header)
